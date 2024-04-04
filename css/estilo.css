@@ -1,0 +1,122 @@
+/* CSS Document */
+
+.contenedor {
+    display: flex; /* Establece el contenedor como un contenedor de flexbox, permitiendo el diseño flexible de los elementos secundarios */
+    flex-direction: column; /* Establece la dirección principal del contenedor como columna, lo que hace que los elementos secundarios se apilen verticalmente */
+    align-items: center; /* Centra los elementos secundarios horizontalmente dentro del contenedor */
+    /*margin-left: 2%; */ /*  Si se descomenta, añadiría un margen a la izquierda del contenedor del 2% del ancho del contenedor */
+}
+/* Estilos para el encabezado */
+header {
+    /*position: relative; /* Posición relativa para que los elementos absolutos se posicionen en relación con el encabezado */
+    height: 400px; /* Altura del encabezado */
+    /*overflow: hidden; /* Oculta cualquier contenido que se desborde del encabezado */
+    border-radius: 10px; /* Radio de los bordes del encabezado */
+   /* display: flex; /* Utiliza flexbox para centrar el contenedor */
+    /*justify-content: center; /* Centra horizontalmente el contenido del encabezado */
+    /*align-items: center; /* Centra verticalmente el contenido del encabezado */
+}
+
+/* Estilos para el contenedor de la imagen */
+.imagen-container {
+    position: relative; /* Posición relativa para que el texto superpuesto pueda ser posicionado dentro */
+    /*max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% del ancho de la imagen */
+    max-height: 100%; /* Ajusta la altura máxima del contenedor al 100% del alto de la imagen */
+    border-radius: 20px; /* Redondea los bordes del contenedor */
+    overflow: hidden; /* Esto es importante para asegurarse de que la imagen redondeada no se desborde del contenedor */
+}
+
+/* Estilos para la imagen dentro del contenedor */
+.imagen-container img {
+    display: block; /* Asegura que la imagen sea un elemento de bloque para aplicar correctamente el redondeo de bordes */
+    width: 100%; /* La imagen ocupa todo el ancho disponible dentro del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor sin distorsionarla */
+    border-radius: 10px; /* Radio de los bordes de la imagen */
+}
+
+
+
+/* Estilos para el texto superpuesto */
+.text-cab {
+    position: absolute; /* Posición absoluta para superponer el texto sobre la imagen */
+    top: 80%; /* Coloca el texto en la 80% superior del contenedor */
+    left: 50%; /* Coloca el texto en la mitad izquierda del contenedor */
+    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    color: white; /* Color del texto */
+    font-size: 30px; /* Tamaño de la fuente del texto */
+    text-shadow: 6px 4px 2px rgba(0, 0, 0, 0.5); /* Sombras del texto */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+.texto-container{
+	top: 50;
+	left: 50;
+	display: flex;
+	max-width: 80%;
+	
+	
+}
+/* Estilos para el texto introductorio */
+.texto-intro {
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    /*text-align: center;  Alineación del texto */
+    padding: 15px; /* Espaciado interno */
+    background-color: #f8f8f8; /* Color de fondo */
+    border-radius: 10px; /* Redondea los bordes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: justify; /* Justifica el texto */
+	
+}
+.texto-in{
+	 font-family: Arial, sans-serif; /* Tipo de fuente */
+    font-size: 28px; /* Tamaño de la fuente */
+    color: #000000; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    /*text-align: center;  Alineación del texto */
+    padding: 15px; /* Espaciado interno */
+    background-color: #f8f8f8; /* Color de fondo */
+    border-radius: 10px; /* Redondea los bordes */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: justify; /* Justifica el texto */
+     border: 4px solid #F9A326;
+	 font-weight: bold;
+}
+
+/* Estilos para el contenedor de las imágenes */
+.imagenes-container {
+    display: flex;/* Establece el contenedor como un contenedor de flexbox, permitiendo el diseño flexible de los elementos secundarios */
+    justify-content: space-around;
+    margin-top: 20px;
+	
+}
+
+/* Estilos para cada imagen y botón de detalle */
+.imagen-detalle {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.imagen-detalle img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.boton-detalle {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+	font-weight: bold;
+}
+
+.boton-detalle:hover {
+    background-color: #0056b3;
+}
